@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            
+            fieldset,p,h1
+            {
+                border: none;
+                padding: 0;
+                margin: 0;
+                
+            }
+          
+            .form-content
+            {
+                background: #efefef;
+                width: 350px;
+                margin: 100px auto;
+                padding: 30px;
+                border: 3px solid #6699ff;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -o-border-radius: 20px;
+                
+                }
+                .form-content h1.form-title
+                {
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+                .form-content div
+                {
+                    margin: 20px;
+                    
+                }
+               .form-content input[type="text"],
+                .form-content input[type="email"],
+                .form-content input[type="password"]
+                {
+                    padding: 5px;
+                    width: 95%;
+                    margin: 5px 0;
+                    border: 1px solid #ccc;
+                    -webkit-transition: border .5s ease-in;
+                    -moz-transition: border .5s ease-in;
+                    -o-transition: border .5s ease-in;
+                    transition: border .5s ease-in;
+                }
+                .form-content.submit-button
+                {
+                    text-align: right;
+                    margin-bottom: 0;
+                    
+                }
+                
+
+.form-content .submit-button input 
+{
+background: #6666ff;
+border:1px solid #ccc;
+color: #ffffff;
+padding: 10px;
+cursor:pointer;
+-webkit-transition:border .5s ease-in;
+-moz-transition:border .5s ease-in;
+-o-transition:border .5s ease-in;
+transition:border .5s ease-in;
+}
+.form-content .submit-button input:hover {
+border:1px solid #336699;
+}
+        </style>
+        <title>Registration of HTML5 and CSS3</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div id="content">
+            <!-- Begin Form -->
+            <div class="form-content">
+                <form class="reg-form" method="post" action="#">
+                    <h1 class="form-title">Register on ur website!</h1>
+                    <fieldset>
+                        <div class="username">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" required="required" placeholder="Your Username Here"/>
+                            </div>
+                        
+                        <div class="email">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" required="required" placeholder="Your E-mail Here"/>
+                        </div>
+                        
+                        <div class="email-confirm">
+                            <label for="email-confirm">Confirm E-mail:</label>
+                            <input type="email" id="email-confirm" required="required" placeholder="Confirm ur E:mail Address"/>
+                            </div>
+                        
+                        <div class="password">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required="required" placeholder="Enter your Password here"/>
+                       </div>
+                        
+                        <div class="password-confirm">
+                            <label for="password-confirm">Password-confirm</label>
+                            <input type="password" id="password-confirm" required="required" placeholder="Confirm your password here"/>
+                        </div>
+                        
+                        <div class="captcha">
+                            <label for="captcha">Confirm tht u are human</label>
+                            <p class="captcha-info">Please enter the  results in the next  field:</p>
+                            <span>2+2=?</span>
+                            <input type="text" id="captcha" required="required" placeholder="Input Here"/>
+                            </div>
+                        <p class="note">Note:All fields are required!</p>
+                        
+                        <div class="submit-button">
+                            <input type="submit" value="Register"/>
+                          </div>
+                          
+                    </fieldset>
+                     
+                </form>
+                
+            </div>
+            
+       </div>
+        
+        
+    </body>
+</html>
